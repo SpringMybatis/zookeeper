@@ -1,0 +1,8 @@
+command --> manager --> workserver
+
+command --> zkClient模拟
+
+manager监听command的数据变化     -->  改变config的数据变化(包括创建config\更新)
+manager监听servers的子节点变化   -->  控制当前活跃的服务节点(输出list)
+
+workserver监听config的数据变化   -->  输出变化后的内容
